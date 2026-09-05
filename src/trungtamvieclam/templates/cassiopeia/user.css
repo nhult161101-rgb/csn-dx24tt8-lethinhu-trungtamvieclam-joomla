@@ -1,0 +1,64 @@
+/* ===== GIAO DIỆN TRUNG TÂM GIỚI THIỆU VIỆC LÀM ===== */
+
+:root {
+    --main-color: #0b4f9c;
+    --second-color: #18a558;
+    --accent-color: #f58220;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #0b4f9c, #1976d2) !important;
+}
+
+/* Tên website */
+.container-header .site-title {
+    color: #ffffff !important;
+    font-weight: 700;
+}
+
+/* Menu */
+.mod-menu {
+    background: #0b4f9c;
+}
+
+.mod-menu > li > a {
+    color: #ffffff !important;
+    font-weight: 600;
+}
+
+.mod-menu > li > a:hover {
+    background: #18a558 !important;
+    color: #ffffff !important;
+}
+
+/* Tiêu đề */
+h1, h2, h3 {
+    color: #0b4f9c;
+}
+
+/* Link */
+a {
+    color: #0b4f9c;
+}
+
+a:hover {
+    color: #f58220;
+}
+
+/* Nút */
+.btn-primary {
+    background: #0b4f9c !important;
+    border-color: #0b4f9c !important;
+}
+
+.btn-primary:hover {
+    background: #18a558 !important;
+    border-color: #18a558 !important;
+}
+
+/* Footer */
+footer {
+    background: #0b4f9c !important;
+    color: #ffffff !important;
+}
