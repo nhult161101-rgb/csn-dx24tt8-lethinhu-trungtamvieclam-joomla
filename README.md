@@ -8,8 +8,8 @@
 - [x] Thiết kế giao diện Website.
 - [x] Xây dựng và quản lý nội dung Website.
 - [x] Cài đặt Website trên máy chủ Web cục bộ.
-- [ ] Thực hiện sao lưu Website.
-- [ ] Thực hiện sao lưu cơ sở dữ liệu.
+- [x] Thực hiện sao lưu Website.
+- [x] Thực hiện sao lưu cơ sở dữ liệu.
 - [ ] Thực hiện phục hồi Website.
 - [ ] Thực hiện phục hồi cơ sở dữ liệu.
 - [ ] Kiểm thử Website.
