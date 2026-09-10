@@ -15,5 +15,5 @@
 - [x] Kiểm thử Website.
 - [x] Đánh giá kết quả đạt được.
 - [ ] Hoàn thiện báo cáo.
-- [ ] Hoàn thiện slide thuyết trình]
+- [ ] Hoàn thiện slide thuyết trình
 
