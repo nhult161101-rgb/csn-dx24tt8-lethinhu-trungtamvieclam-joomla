@@ -10,10 +10,10 @@
 - [x] Cài đặt Website trên máy chủ Web cục bộ.
 - [x] Thực hiện sao lưu Website.
 - [x] Thực hiện sao lưu cơ sở dữ liệu.
-- [ ] Thực hiện phục hồi Website.
-- [ ] Thực hiện phục hồi cơ sở dữ liệu.
-- [ ] Kiểm thử Website.
-- [ ] Đánh giá kết quả đạt được.
+- [x] Thực hiện phục hồi Website.
+- [x] Thực hiện phục hồi cơ sở dữ liệu.
+- [x] Kiểm thử Website.
+- [x] Đánh giá kết quả đạt được.
 - [ ] Hoàn thiện báo cáo.
-- [ ] Hoàn thiện slide thuyết trình.
+- [ ] Hoàn thiện slide thuyết trình]
 
