@@ -222,6 +222,9 @@ Môi trường này giúp quá trình cài đặt, cấu hình, xây dựng, ki�
 # CHƯƠNG 3. PHÂN TÍCH VÀ THIẾT KẾ WEBSITE
 
 ## 3.1. Khảo sát Website tham khảo
+![Hình 1. Giao diện Website tham khảo](images/hinh-01-trang-chu.png)
+
+*Hình 1. Giao diện Website tham khảo*
 
 Trước khi xây dựng Website, đề tài tiến hành khảo sát một số Website có nội dung liên quan đến Trung tâm Giới thiệu việc làm và tuyển dụng. Việc khảo sát nhằm tìm hiểu cách tổ chức thông tin, bố cục giao diện và phương thức trình bày nội dung việc làm.
 
@@ -271,17 +274,20 @@ Người truy cập có thể xem các thông tin được công khai trên Webs
 
 Người truy cập cũng có thể sử dụng chức năng tìm kiếm và lọc việc làm theo ngành nghề.
 
-### 3.3.2. Quản trị viên
+### 3.3.2. Quản trị viên Website
 
-Quản trị viên sử dụng khu vực quản trị Joomla để:
+Quản trị viên là người chịu trách nhiệm quản lý và cập nhật nội dung Website.
 
-- Quản lý bài viết.
-- Quản lý danh mục.
-- Quản lý menu.
-- Quản lý module.
-- Quản lý chức năng tìm kiếm.
-- Cập nhật nội dung Website.
-- Thực hiện sao lưu và phục hồi khi cần thiết.
+Các chức năng chính của quản trị viên gồm:
+
+- Quản lý danh mục và bài viết.
+- Cập nhật thông tin giới thiệu Trung tâm.
+- Thêm, sửa và quản lý thông tin việc làm.
+- Quản lý thông tin nhà tuyển dụng.
+- Cập nhật tin tức và thông báo.
+- Quản lý menu và các module trên Website.
+- Quản lý chức năng tìm kiếm và lọc việc làm.
+- Thực hiện sao lưu và phục hồi Website, cơ sở dữ liệu.
 
 ## 3.4. Thiết kế cấu trúc Website
 
