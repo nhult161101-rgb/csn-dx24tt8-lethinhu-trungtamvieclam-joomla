@@ -146,35 +146,60 @@ Báo cáo được chia thành 5 chương:
 - **Chương 5: Kết quả và đánh giá** – trình bày kết quả đạt được, ưu điểm, hạn chế và hướng phát triển của đề tài.
 # CHƯƠNG 2. CƠ SỞ LÝ THUYẾT
 
-## 2.1. Tổng quan về hệ quản trị nội dung CMS
+## 2.1. Tổng quan về CMS
 
-CMS (Content Management System) là hệ quản trị nội dung, được sử dụng để xây dựng, quản lý và cập nhật nội dung cho Website. CMS giúp người quản trị có thể tạo, chỉnh sửa, sắp xếp và hiển thị nội dung mà không cần phải xây dựng toàn bộ Website bằng mã nguồn từ đầu.
+CMS (Content Management System) là hệ quản trị nội dung, được sử dụng để tạo, chỉnh sửa, tổ chức và quản lý nội dung của Website thông qua giao diện quản trị.
 
-Một hệ thống CMS thường cung cấp các chức năng như quản lý bài viết, danh mục, người dùng, menu, giao diện và các thành phần mở rộng. Nhờ đó, quá trình xây dựng và quản lý Website được thực hiện thuận tiện và tiết kiệm thời gian hơn.
+CMS giúp người quản trị có thể cập nhật nội dung mà không cần phải chỉnh sửa toàn bộ mã nguồn của Website. Nội dung có thể được tổ chức thành các bài viết, danh mục, menu và các thành phần hiển thị khác.
 
-Trong phạm vi đề tài, CMS được lựa chọn để xây dựng Website giới thiệu thông tin Trung tâm Giới thiệu việc làm, trong đó nội dung được tổ chức thành các danh mục và bài viết phù hợp với yêu cầu của Website.
+Đối với Website giới thiệu thông tin Trung tâm Giới thiệu việc làm, CMS phù hợp vì Website thường xuyên cần cập nhật thông tin việc làm, nhà tuyển dụng, tin tức và thông báo.
+
+Một số ưu điểm của CMS:
+
+- Quản lý nội dung tập trung.
+- Dễ dàng tạo và chỉnh sửa bài viết.
+- Hỗ trợ phân loại nội dung theo danh mục.
+- Hỗ trợ xây dựng hệ thống menu và điều hướng.
+- Có thể mở rộng chức năng thông qua các thành phần mở rộng.
+- Giúp giảm thời gian xây dựng Website so với việc lập trình toàn bộ từ đầu.
+
+Trong đề tài, CMS được lựa chọn là Joomla.
 
 ## 2.2. Tổng quan về Joomla
 
-Joomla là một hệ quản trị nội dung mã nguồn mở được sử dụng để xây dựng và quản lý Website. Joomla cung cấp các công cụ quản lý nội dung, giao diện, menu, người dùng và nhiều thành phần mở rộng.
+Joomla là một hệ quản trị nội dung mã nguồn mở được sử dụng để xây dựng và quản lý Website.
 
-Joomla có giao diện quản trị riêng, cho phép người quản trị thực hiện các công việc như tạo bài viết, quản lý danh mục, tạo menu, cấu hình module và thay đổi giao diện Website.
+Joomla cung cấp giao diện quản trị giúp người quản trị thực hiện các công việc như tạo bài viết, quản lý danh mục, xây dựng menu, quản lý module, cấu hình giao diện và quản lý người dùng.
 
-Trong đề tài, Joomla được sử dụng làm nền tảng chính để xây dựng Website giới thiệu thông tin Trung tâm Giới thiệu việc làm.
+Mô hình hoạt động cơ bản của Joomla gồm người dùng, máy chủ Web, mã nguồn Joomla và cơ sở dữ liệu. Khi người dùng truy cập Website, máy chủ Web tiếp nhận yêu cầu và Joomla xử lý yêu cầu, lấy dữ liệu cần thiết từ cơ sở dữ liệu để tạo nội dung và trả kết quả về trình duyệt.
 
-## 2.3. Các thành phần cơ bản của Joomla
+Trong đề tài, Joomla được triển khai trên môi trường máy chủ Web cục bộ bằng XAMPP. Website sử dụng Joomla 5.4.7 và cơ sở dữ liệu MariaDB được quản lý thông qua phpMyAdmin.
+
+Joomla phù hợp với đề tài vì hỗ trợ tốt việc tổ chức nội dung Website thành các bài viết, danh mục, menu và module mà không cần xây dựng toàn bộ hệ thống từ đầu.
+![Hình 2. Giao diện quản trị Joomla](../images/hinh-02-giao-dien-quan-tri-joomla.png)
+
+*Hình 2. Giao diện quản trị Joomla*
+
+## 2.3. Kiến trúc và thành phần của Joomla
+
+Joomla được tổ chức từ nhiều thành phần phối hợp với nhau để xây dựng và vận hành Website. Các thành phần chính được sử dụng hoặc tìm hiểu trong đề tài gồm Article, Category, Menu, Template, Module, Component và Plugin.
 
 ### 2.3.1. Article
 
-Article là thành phần dùng để tạo và quản lý nội dung trên Joomla. Nội dung của Website như thông tin giới thiệu, việc làm, tin tức, nhà tuyển dụng và thông báo được xây dựng dưới dạng các bài viết.
+Article là thành phần dùng để tạo và quản lý nội dung bài viết trên Joomla.
 
-Mỗi bài viết có thể được phân loại vào một danh mục để thuận tiện cho việc quản lý và hiển thị.
+Trong đề tài, Article được sử dụng để xây dựng các nội dung như giới thiệu Trung tâm, thông tin việc làm, thông tin nhà tuyển dụng, tin tức và thông báo.
+
+Mỗi bài viết có thể được gán vào một Category để thuận tiện cho việc quản lý và hiển thị.
+![Hình 4. Quản lý bài viết trong Joomla](../images/hinh-04-danh-sach-bai-viet-viec-lam.png)
+
+*Hình 4. Quản lý bài viết trong Joomla*
 
 ### 2.3.2. Category
 
-Category là thành phần dùng để phân loại và tổ chức các bài viết. Joomla cho phép tạo các danh mục và danh mục con để xây dựng cấu trúc nội dung rõ ràng.
+Category là thành phần dùng để phân loại và tổ chức các bài viết theo từng nhóm nội dung.
 
-Trong Website của đề tài, nhóm nội dung việc làm được chia thành các ngành nghề như:
+Trong Website của đề tài, nhóm nội dung việc làm được chia thành các danh mục ngành nghề:
 
 - Kế toán - Kiểm toán.
 - Kinh doanh - Bán hàng.
@@ -182,47 +207,101 @@ Trong Website của đề tài, nhóm nội dung việc làm được chia thàn
 - Hành chính - Nhân sự.
 - Marketing - Truyền thông.
 
-Việc phân chia danh mục giúp người dùng dễ dàng tìm kiếm và tiếp cận thông tin việc làm theo từng nhóm ngành nghề.
+Việc phân chia nội dung thành các danh mục giúp người quản trị dễ dàng quản lý bài viết và giúp người dùng thuận tiện hơn khi tìm kiếm thông tin.
+![Hình 5. Quản lý danh mục ngành nghề trong Joomla](../images/hinh-03-danh-muc-nganh-nghe.png)
+
+*Hình 5. Quản lý danh mục ngành nghề trong Joomla*
 
 ### 2.3.3. Menu
 
-Menu được sử dụng để tạo hệ thống điều hướng cho Website. Menu giúp người dùng truy cập nhanh đến các nội dung chính của Website.
-Việc sử dụng cơ sở dữ liệu giúp nội dung Website được lưu trữ có hệ thống và cho phép sao lưu, phục hồi khi cần thiết.
+Menu được sử dụng để tạo hệ thống điều hướng cho Website. Menu gồm các Menu Item liên kết đến các trang hoặc nội dung khác nhau.
 
-## 2.6. XAMPP
+Trong đề tài, menu chính gồm các mục:
+
+- Trang chủ.
+- Giới thiệu.
+- Việc làm.
+- Tin tức.
+- Nhà tuyển dụng.
+- Thông báo.
+- Liên hệ.
+
+Hệ thống menu giúp người dùng dễ dàng chuyển đến các nhóm nội dung cần xem.
+
+## 2.4. Cơ sở dữ liệu trong Joomla
+
+Cơ sở dữ liệu là thành phần quan trọng trong Joomla, được sử dụng để lưu trữ các thông tin của Website.
+
+Các dữ liệu như bài viết, danh mục, menu, module, cấu hình và thông tin người dùng được lưu trữ trong cơ sở dữ liệu.
+
+Trong đề tài, Website Joomla sử dụng cơ sở dữ liệu có tên `joomla_db`. Cơ sở dữ liệu được quản lý thông qua phpMyAdmin và chạy trên hệ quản trị cơ sở dữ liệu MariaDB.
+
+Joomla sử dụng các bảng dữ liệu với tiền tố được thiết lập trong quá trình cài đặt. Trong Website của đề tài, tiền tố bảng dữ liệu là `rjth_`.
+
+Việc sử dụng cơ sở dữ liệu giúp nội dung Website được lưu trữ có tổ chức và cho phép Joomla truy xuất dữ liệu khi người dùng truy cập Website.
+
+Cơ sở dữ liệu cũng đóng vai trò quan trọng trong quá trình sao lưu và phục hồi Website. Khi thực hiện sao lưu, cần đảm bảo dữ liệu cơ sở dữ liệu được sao lưu đầy đủ để có thể phục hồi Website khi cần thiết.
+
+## 2.5. Template, Module, Component và Plugin
+
+### 2.5.1. Template
+
+Template là thành phần quyết định giao diện và cách bố trí nội dung của Website.
+
+Template quy định các khu vực hiển thị, bố cục, kiểu chữ và cách trình bày các thành phần trên Website.
+
+Trong đề tài, Website sử dụng template Cassiopeia của Joomla. Template được tùy chỉnh để phù hợp với Website Trung tâm Giới thiệu việc làm, bao gồm banner, menu, khu vực tìm kiếm và các khu vực hiển thị nội dung.
+
+### 2.5.2. Module
+
+Module là thành phần dùng để hiển thị các nội dung hoặc chức năng bổ sung tại những vị trí được xác định bởi Template.
+
+Trong Website của đề tài, các module được sử dụng để hiển thị:
+
+- Menu chính.
+- Thanh tìm kiếm.
+- Việc làm nổi bật.
+- Danh mục ngành nghề.
+- Giới thiệu Trung tâm.
+- Thông tin liên hệ.
+- Đăng nhập.
+
+Việc sử dụng Module giúp bố trí các thành phần của Website linh hoạt theo từng vị trí trên giao diện.
+
+### 2.5.3. Component
+
+Component là thành phần đảm nhiệm các chức năng chính của Joomla và thường tạo ra nội dung chính của một trang.
+
+Joomla cung cấp nhiều Component phục vụ các chức năng khác nhau. Trong đề tài, Component Smart Search (`com_finder`) được sử dụng để thực hiện chức năng tìm kiếm nội dung trên Website.
+
+Smart Search cho phép người dùng nhập từ khóa và tìm kiếm các nội dung đã được lập chỉ mục trên Website.
+
+### 2.5.4. Plugin
+
+Plugin là thành phần mở rộng thực hiện các chức năng xử lý hoặc bổ sung cho Joomla tại những thời điểm nhất định trong quá trình hoạt động của hệ thống.
+
+Plugin có thể hỗ trợ Joomla xử lý nội dung, tìm kiếm, xác thực và nhiều chức năng khác.
+
+Trong đề tài, Plugin được tìm hiểu như một thành phần mở rộng của Joomla, giúp hệ thống có khả năng bổ sung và mở rộng chức năng mà không cần thay đổi toàn bộ mã nguồn Joomla.
+
+## 2.6. XAMPP và môi trường máy chủ Web cục bộ
 
 XAMPP là môi trường phát triển Web cục bộ, cung cấp các thành phần cần thiết để chạy Website trên máy tính cá nhân.
 
-Trong đề tài, XAMPP được sử dụng để triển khai Joomla trên máy chủ Web cục bộ. Các thành phần chính được sử dụng gồm Apache, PHP, MariaDB và phpMyAdmin.
+Trong đề tài, XAMPP được sử dụng để triển khai Joomla trên máy chủ Web cục bộ. Các thành phần chính được sử dụng gồm:
 
-Apache đảm nhiệm việc cung cấp Website thông qua trình duyệt. PHP được sử dụng để Joomla xử lý các chức năng phía máy chủ. MariaDB được sử dụng để lưu trữ cơ sở dữ liệu, còn phpMyAdmin hỗ trợ quản lý cơ sở dữ liệu thông qua giao diện Web.
+- Apache: máy chủ Web dùng để tiếp nhận và xử lý các yêu cầu truy cập Website.
+- PHP: ngôn ngữ lập trình được Joomla sử dụng để xử lý các yêu cầu và tạo nội dung Website.
+- MariaDB: hệ quản trị cơ sở dữ liệu được sử dụng để lưu trữ dữ liệu Joomla.
+- phpMyAdmin: công cụ giao diện Web dùng để quản lý cơ sở dữ liệu.
 
-## 2.7. Sao lưu và phục hồi Website
+Môi trường XAMPP giúp quá trình cài đặt, cấu hình, xây dựng, kiểm thử và sao lưu Website được thực hiện trực tiếp trên máy tính cá nhân trước khi triển khai lên máy chủ thực tế.
 
-Sao lưu là quá trình tạo bản sao dữ liệu và các tệp cần thiết của Website nhằm phòng tránh mất dữ liệu khi xảy ra sự cố.
-
-Đối với Website Joomla, quá trình sao lưu có thể bao gồm sao lưu các tệp mã nguồn Website và sao lưu cơ sở dữ liệu.
-
-Phục hồi là quá trình sử dụng các bản sao lưu để đưa Website và cơ sở dữ liệu trở lại trạng thái hoạt động trước đó. Trong đề tài, quá trình sao lưu và phục hồi được thực hiện nhằm kiểm tra khả năng bảo vệ và khôi phục dữ liệu của Website.
-
-## 2.8. Môi trường triển khai của đề tài
-
-Website được xây dựng và kiểm thử trên máy tính cá nhân trong môi trường máy chủ Web cục bộ.
-
-Các thành phần chính của môi trường triển khai gồm:
-
-- Hệ quản trị nội dung: Joomla.
-- Web Server: Apache.
-- Ngôn ngữ lập trình phía máy chủ: PHP.
-- Hệ quản trị cơ sở dữ liệu: MariaDB.
-- Công cụ quản lý cơ sở dữ liệu: phpMyAdmin.
-- Môi trường Web cục bộ: XAMPP.
-
-Môi trường này giúp quá trình cài đặt, cấu hình, xây dựng, kiểm thử và sao lưu, phục hồi Website được thực hiện trực tiếp trên máy tính trước khi có thể triển khai lên máy chủ thực tế.
+Trong đề tài, Website Joomla được triển khai tại môi trường localhost để phục vụ quá trình xây dựng và kiểm thử.
 # CHƯƠNG 3. PHÂN TÍCH VÀ THIẾT KẾ WEBSITE
 
 ## 3.1. Khảo sát Website tham khảo
-![Hình 1. Giao diện Website tham khảo](images/hinh-01-trang-chu.png)
+![Hình 1. Giao diện Website tham khảo](../images/hinh-01-trang-chu.png)
 
 *Hình 1. Giao diện Website tham khảo*
 
@@ -594,6 +673,9 @@ Năm bộ lọc được thiết lập tương ứng với năm nhóm ngành ngh
 Các bộ lọc được liên kết với danh mục tương ứng trong Joomla.
 
 Khi người dùng lựa chọn một ngành nghề, hệ thống sử dụng bộ lọc tương ứng để giới hạn kết quả tìm kiếm theo nhóm ngành đã chọn.
+![Hình 5. Tìm kiếm và lọc ngành nghề](../images/hinh-05-tim-kiem-loc-nganh-nghe.png)
+
+*Hình 5. Tìm kiếm và lọc ngành nghề*
 
 ## 4.10. Kiểm thử chức năng tìm kiếm
 
@@ -620,6 +702,11 @@ Quá trình thực hiện gồm:
 
 Tệp sao lưu cơ sở dữ liệu chứa các bảng dữ liệu cần thiết của Website Joomla.
 
+![Hình 6. Sao lưu cơ sở dữ liệu](../images/images/hinh-06-sao-luu-co-so-du-lieu.png)
+
+*Hình 6. Sao lưu cơ sở dữ liệu*
+
+## 4.12. Sao lưu Website
 ## 4.12. Sao lưu Website
 
 Bên cạnh cơ sở dữ liệu, các tệp Website cũng được sao lưu.
@@ -635,12 +722,18 @@ Việc sao lưu cả tệp Website và cơ sở dữ liệu giúp đảm bảo c
 `joomla_db_restore_test`
 
 Tệp SQL đã sao lưu được import vào cơ sở dữ liệu kiểm thử.
+![Hình 7. Phục hồi cơ sở dữ liệu](../images/hinh-07-phuc-hoi-co-so-du-lieu.png)
+
+*Hình 7. Phục hồi cơ sở dữ liệu*
 
 Sau khi quá trình import hoàn tất, các bảng dữ liệu Joomla được khôi phục và kiểm tra trong phpMyAdmin.
 
 Kết quả cho thấy dữ liệu cơ sở dữ liệu có thể được phục hồi từ tệp sao lưu.
 
 ## 4.14. Phục hồi Website
+![Hình 8. Phục hồi Website](../images/hinh-08-phuc-hoi-website.png)
+
+*Hình 8. Phục hồi Website*
 
 Sau khi phục hồi cơ sở dữ liệu, các tệp Website từ bản sao lưu được đưa vào thư mục Website kiểm thử.
 
