@@ -34,39 +34,66 @@
 
 ### 3.2. Phân tích yêu cầu Website
 
-### 3.3. Xây dựng cấu trúc Website
+### 3.3. Phân tích đối tượng sử dụng
 
-### 3.4. Thiết kế giao diện
+### 3.4. Thiết kế cấu trúc Website
 
-### 3.5. Thiết kế nội dung
+### 3.5. Thiết kế nội dung Website
 
-### 3.6. Thiết kế chức năng tìm kiếm và lọc việc làm
+### 3.6. Thiết kế giao diện Website
+
+### 3.7. Thiết kế chức năng tìm kiếm và lọc việc làm
+
+### 3.8. Thiết kế quản lý nội dung
+
+### 3.9. Thiết kế sao lưu và phục hồi
+
+### 3.10. Sơ đồ cấu trúc Website
+
+### 3.11. Kết luận chương
 
 
 ## CHƯƠNG 4. XÂY DỰNG VÀ TRIỂN KHAI WEBSITE
 
-### 4.1. Cài đặt Joomla trên XAMPP
+### 4.1. Cài đặt môi trường XAMPP
 
-### 4.2. Cấu hình cơ sở dữ liệu
+### 4.2. Cài đặt Joomla
 
-### 4.3. Xây dựng danh mục và nội dung
+### 4.3. Cấu hình cơ sở dữ liệu
 
-### 4.4. Xây dựng menu và giao diện
+### 4.4. Xây dựng danh mục và nội dung
 
-### 4.5. Xây dựng chức năng tìm kiếm việc làm
+### 4.5. Xây dựng nội dung bài viết
 
-### 4.6. Sao lưu Website và cơ sở dữ liệu
+### 4.6. Xây dựng menu 
 
-### 4.7. Phục hồi Website và cơ sở dữ liệu
+### 4.7.Thiết kế giao diện bằng Cassiopeia
 
-### 4.8. Kiểm thử Website
+### 4.8. Xây dựng chức năng tìm kiếm việc làm
 
+### 4.9. Xây dựng chức năng lọc theo ngành nghề
+
+### 4.10. Kiểm thử chức năng tìm kiếm
+
+### 4.11. Sao lưu cơ sở dữ liệu
+
+### 4.12. Sao lưu Website
+
+### 4.13. Phục hồi cơ sở dữ liệu
+
+### 4.14. Phục hồi Website
+
+### 4.15. Kiểm thử Website
+
+### 4.16. Quản lý mã nguồn trên GitHub
+
+### 4.17. Kết luận chương
 
 ## CHƯƠNG 5. KẾT QUẢ VÀ ĐÁNH GIÁ
 
 ### 5.1. Kết quả đạt được
 
-### 5.2. Các chức năng đã hoàn thành
+### 5.2. Các chức năng chính của Website
 
 ### 5.3. Ưu điểm
 
@@ -74,7 +101,9 @@
 
 ### 5.5. Hướng phát triển
 
-### 5.6. Kết luận
+### 5.6. Đánh giá kết quả thực hiện
+
+### 5.7. Kết luận
 
 
 ## TÀI LIỆU THAM KHẢO
@@ -301,9 +330,9 @@ Trong đề tài, Website Joomla được triển khai tại môi trường loca
 # CHƯƠNG 3. PHÂN TÍCH VÀ THIẾT KẾ WEBSITE
 
 ## 3.1. Khảo sát Website tham khảo
-![Hình 1. Giao diện Website tham khảo](../images/hinh-01-trang-chu.png)
+![Hình 9. Giao diện Website tham khảo](../images/khaohinh-09-website-tham-khao.png)
 
-*Hình 1. Giao diện Website tham khảo*
+*Hình 9. Giao diện Website tham khảo*
 
 Trước khi xây dựng Website, đề tài tiến hành khảo sát một số Website có nội dung liên quan đến Trung tâm Giới thiệu việc làm và tuyển dụng. Việc khảo sát nhằm tìm hiểu cách tổ chức thông tin, bố cục giao diện và phương thức trình bày nội dung việc làm.
 
@@ -430,7 +459,9 @@ Bố cục giao diện gồm các khu vực chính:
 - Khu vực thông tin liên hệ và các nội dung bổ sung.
 
 Template Cassiopeia của Joomla được sử dụng làm nền tảng giao diện. Các module được bố trí tại những vị trí phù hợp nhằm tạo bố cục rõ ràng và thuận tiện cho người sử dụng.
+![Hình 1. Giao diện trang chủ Website](../images/hinh-01-trang-chu.png)
 
+*Hình 1. Giao diện trang chủ Website*
 ## 3.7. Thiết kế chức năng tìm kiếm và lọc việc làm
 
 Để hỗ trợ người dùng tìm kiếm thông tin việc làm, Website sử dụng chức năng Smart Search của Joomla.
