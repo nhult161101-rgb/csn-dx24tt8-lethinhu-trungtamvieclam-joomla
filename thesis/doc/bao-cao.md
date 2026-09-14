@@ -423,12 +423,11 @@ Trước khi xây dựng website, đề tài tiến hành khảo sát một số
 
 Qua quá trình khảo sát, các nội dung thường được tổ chức thành các nhóm chính như: Trang chủ, Giới thiệu, Việc làm, Tin tức, Nhà tuyển dụng, Thông báo và Liên hệ. Các website tham khảo cũng chú trọng đến việc trình bày thông tin ngắn gọn, rõ ràng và giúp người dùng dễ dàng tìm kiếm nội dung.
 
-Hình ảnh khảo sát website tham khảo được trình bày tại Hình 1.
+Hình ảnh khảo sát website tham khảo được trình bày tại Hình 9.
 
-![Hình 1. Giao diện Website tham khảo](../images/khaohinh-09-website-tham-khao.png)
+![Hình 9. Giao diện Website tham khảo](../images/hinh-09-website-tham-khao.jpg)
 
-**Hình 1. Giao diện Website tham khảo**
-
+**Hình 9. Giao diện Website tham khảo*
 Từ kết quả khảo sát, đề tài lựa chọn hướng xây dựng website có giao diện đơn giản, dễ sử dụng và tập trung vào việc cung cấp thông tin việc làm, nhà tuyển dụng và các thông tin liên quan đến Trung tâm.
 
 ---
