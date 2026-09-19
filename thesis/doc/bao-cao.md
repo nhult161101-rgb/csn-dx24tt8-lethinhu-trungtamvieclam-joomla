@@ -1705,9 +1705,8 @@ Quản trị viên có thể tạo và cập nhật các loại nội dung:
 - Giới thiệu.
 - Việc làm.
 - Nhà tuyển dụng.
-- Tin tức.
-- Thông báo.
-- Liên hệ.
+- Tin tức & sự kiện
+- Việc làm
 
 Các bài viết được phân loại bằng Categories nhằm giúp việc quản lý và hiển thị nội dung thuận tiện hơn.
 
