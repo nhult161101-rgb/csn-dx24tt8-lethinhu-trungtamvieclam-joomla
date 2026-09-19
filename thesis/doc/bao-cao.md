@@ -1974,7 +1974,6 @@ https://vieclam.gov.vn/
 
 ### A.1. Mã HTML xây dựng thanh tìm kiếm
 
-```html
 <div class="job-search-wrapper">
 <form class="job-search-form" action="/joomla/index.php" method="get">
 
@@ -2009,7 +2008,7 @@ TÌM KIẾM
 </form>
 </div>
 
-A.2. CSS thiết kế thanh tìm kiếm
+### A.2. CSS thiết kế thanh tìm kiếm
 .job-search-box {
     width: 100%;
     max-width: 1150px;
@@ -2053,7 +2052,8 @@ A.2. CSS thiết kế thanh tìm kiếm
     font-size: 14px;
     font-weight: bold;
 }
-A.3. CSS hiển thị thanh tìm kiếm trên banner
+
+### A.3. CSS hiển thị thanh tìm kiếm trên banner
 .banner-search-overlay {
     position: absolute;
     left: 50%;
@@ -2062,7 +2062,8 @@ A.3. CSS hiển thị thanh tìm kiếm trên banner
     max-width: 1150px;
     z-index: 10;
 }
-A.4. CSS responsive
+
+### A.4. CSS responsive
 @media (max-width: 850px) {
     .job-search-form {
         flex-wrap: wrap;
@@ -2159,6 +2160,9 @@ Danh mục
           ├── Thông báo
           └── Liên hệ
 
+```
+
+
 ### B.5. Smart Search
 Joomla Smart Search sử dụng các bảng có tiền tố rjth_finder_ để lưu dữ liệu lập chỉ mục phục vụ tìm kiếm.
 Sau khi nội dung Website được lập chỉ mục, người dùng có thể tìm kiếm thông tin việc làm bằng từ khóa. Website đồng thời hỗ trợ lựa chọn ngành nghề thông qua bộ lọc Smart Search.
@@ -2172,6 +2176,7 @@ Nhân viên kế toán tổng hợp
 ### B.6. Sao lưu và phục hồi cơ sở dữ liệu
 Trong quá trình thực hiện đồ án, cơ sở dữ liệu joomla_db được sao lưu bằng phpMyAdmin thành tệp SQL.
 Quy trình thực hiện gồm:
+
 joomla_db
     ↓
 Export
@@ -2183,6 +2188,7 @@ Tạo cơ sở dữ liệu kiểm thử
 Import
     ↓
 joomla_db_restore_test
+
 Việc phục hồi cơ sở dữ liệu được thực hiện nhằm kiểm tra khả năng khôi phục dữ liệu trong trường hợp cần triển khai lại Website.
 
 ### B.7. Hình ảnh cấu trúc cơ sở dữ liệu
@@ -2325,6 +2331,7 @@ Ví dụ:
 ```text
 Từ khóa: nhân viên
 Ngành nghề: Kế toán - Kiểm toán
+```
 
 Kết quả tìm kiếm hiển thị bài viết phù hợp với điều kiện đã lựa chọn.
  
