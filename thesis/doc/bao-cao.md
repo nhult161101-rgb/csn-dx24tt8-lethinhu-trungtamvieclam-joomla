@@ -1595,7 +1595,7 @@ Giao diện trang chủ được xây dựng với các thành phần chính:
 
 Menu chính giúp người dùng truy cập nhanh đến các khu vực:
 
-**Trang chủ → Giới thiệu → Việc làm → Tin tức → Nhà tuyển dụng → Thông báo → Liên hệ**
+**Trang chủ → Tin tức & sự kiện → Nhà tuyển dụng → Giới thiệu Trung tâm → Việc làm**
 
 Giao diện được xây dựng trên Template Cassiopeia và tùy chỉnh bằng CSS nhằm tạo bố cục phù hợp với Website Trung tâm Giới thiệu việc làm.
 
