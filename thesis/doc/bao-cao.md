@@ -190,6 +190,261 @@ Ngoài phần Mở đầu, Danh mục tài liệu tham khảo và Phụ lục, n
 
 **Chương 5. Kết luận và hướng phát triển:** Trình bày những kết quả đạt được, những hạn chế của hệ thống và hướng phát triển trong thời gian tiếp theo.
 
+# CHƯƠNG 1. TỔNG QUAN
+
+## 1.1. Tổng quan về lĩnh vực việc làm
+
+Việc làm là một trong những vấn đề quan trọng đối với người lao động và doanh nghiệp. Người lao động có nhu cầu tìm kiếm công việc phù hợp với trình độ, chuyên môn, kinh nghiệm và điều kiện cá nhân. Trong khi đó, doanh nghiệp và nhà tuyển dụng có nhu cầu tìm kiếm nguồn nhân lực phù hợp với vị trí tuyển dụng.
+
+Sự phát triển của Internet và công nghệ thông tin đã tạo điều kiện thuận lợi cho việc cung cấp và tra cứu thông tin việc làm thông qua các Website trực tuyến. Thay vì phải tìm kiếm thông tin bằng các phương thức truyền thống, người lao động có thể truy cập Website để tìm hiểu vị trí tuyển dụng, ngành nghề, thông tin nhà tuyển dụng và các yêu cầu của công việc.
+
+Đối với các Trung tâm Giới thiệu việc làm, Website là một kênh cung cấp thông tin quan trọng, giúp kết nối người lao động với doanh nghiệp và hỗ trợ phổ biến các thông tin liên quan đến việc làm.
+
+Trong phạm vi đồ án, đề tài tập trung nghiên cứu việc xây dựng Website giới thiệu thông tin Trung tâm Giới thiệu việc làm bằng hệ quản trị nội dung Joomla. Website tập trung vào việc tổ chức và cung cấp thông tin việc làm, ngành nghề, nhà tuyển dụng, tin tức và thông tin liên hệ.
+
+## 1.2. Khảo sát và tham khảo các Website Trung tâm Giới thiệu việc làm
+
+Để có cơ sở xây dựng Website, đề tài tiến hành khảo sát một số Website trong lĩnh vực việc làm. Nội dung khảo sát tập trung vào cách tổ chức menu, danh mục việc làm, chức năng tìm kiếm, thông tin nhà tuyển dụng, tin tức và cách trình bày nội dung.
+
+### 1.2.1. Website tham khảo 1
+
+Website được lựa chọn tham khảo là **Việc làm Bình Dương – Sàn Giao dịch việc làm tại Bình Dương**.
+
+Website cung cấp các thông tin liên quan đến việc làm và tuyển dụng, hỗ trợ người lao động tìm kiếm thông tin tuyển dụng và giúp các doanh nghiệp cung cấp thông tin về nhu cầu tuyển dụng.
+
+Một số nội dung được quan tâm trong quá trình khảo sát gồm:
+
+- Cách bố trí menu và các khu vực nội dung.
+- Cách trình bày thông tin việc làm.
+- Cách tổ chức danh mục ngành nghề.
+- Chức năng tìm kiếm và tra cứu thông tin.
+- Cách hiển thị thông tin tuyển dụng.
+- Cách trình bày thông tin dành cho người lao động và nhà tuyển dụng.
+
+Hình ảnh Website tham khảo được sử dụng làm cơ sở để nghiên cứu và định hướng thiết kế giao diện cho Website của đề tài.
+
+![Hình 1.1. Giao diện Website tham khảo](../images/hinh-01-website-tham-khao.png)
+
+**Hình 1.1. Giao diện Website tham khảo – Việc làm Bình Dương**
+
+### 1.2.2. Website tham khảo 2
+
+Website tham khảo thứ hai là **Trung tâm Dịch vụ việc làm Đồng Nai**.
+
+Website được tham khảo về cách tổ chức và cung cấp các nội dung liên quan đến hoạt động việc làm, tuyển dụng và hỗ trợ người lao động.
+
+Một số nội dung được quan tâm gồm:
+
+- Thông tin giới thiệu về Trung tâm.
+- Thông tin việc làm.
+- Thông tin tuyển dụng.
+- Tin tức và thông báo.
+- Thông tin dành cho người tìm việc.
+- Thông tin dành cho nhà tuyển dụng.
+- Thông tin liên hệ.
+
+Qua khảo sát, đề tài tham khảo cách tổ chức nội dung theo từng nhóm để người dùng dễ dàng tìm kiếm thông tin cần thiết.
+
+### 1.2.3. Website tham khảo 3
+
+Website tham khảo thứ ba là **Trung tâm Dịch vụ việc làm Thành phố Hồ Chí Minh**.
+
+Website được tham khảo về cách trình bày thông tin việc làm, tuyển dụng và các nội dung hỗ trợ người lao động.
+
+Các nội dung được quan tâm gồm:
+
+- Cấu trúc menu.
+- Danh mục thông tin việc làm.
+- Thông tin tuyển dụng.
+- Tin tức và thông báo.
+- Thông tin nhà tuyển dụng.
+- Chức năng tra cứu và tìm kiếm.
+- Cách trình bày thông tin trên giao diện Website.
+
+Ngoài ra, đề tài cũng tham khảo cách tổ chức thông tin của **Sàn giao dịch việc làm Quốc gia** để có thêm cơ sở trong quá trình xây dựng cấu trúc Website.
+
+### 1.2.4. Nhận xét và đánh giá các Website tham khảo
+
+Qua quá trình khảo sát, các Website trong lĩnh vực việc làm đều tập trung vào việc cung cấp thông tin tuyển dụng và hỗ trợ người lao động tìm kiếm việc làm.
+
+Một số đặc điểm được đề tài tham khảo gồm:
+
+- Menu được tổ chức thành các nhóm nội dung rõ ràng.
+- Thông tin việc làm được phân chia theo danh mục.
+- Có chức năng tìm kiếm hoặc tra cứu thông tin.
+- Nội dung tuyển dụng được trình bày theo từng bài viết.
+- Có khu vực thông tin nhà tuyển dụng.
+- Có khu vực tin tức và thông báo.
+- Có thông tin liên hệ để người dùng có thể trao đổi khi cần thiết.
+
+Từ kết quả khảo sát, đề tài lựa chọn xây dựng Website theo hướng đơn giản, dễ sử dụng và tập trung vào việc tra cứu thông tin việc làm.
+
+Website của đề tài được tổ chức thành các nhóm nội dung chính gồm:
+
+- Trang chủ.
+- Giới thiệu.
+- Việc làm.
+- Tin tức và sự kiện.
+- Nhà tuyển dụng.
+- Liên hệ.
+
+Đối với phần việc làm, Website được chia thành năm nhóm ngành nghề:
+
+- Kế toán - Kiểm toán.
+- Kinh doanh - Bán hàng.
+- Công nghệ thông tin.
+- Hành chính - Nhân sự.
+- Marketing - Truyền thông.
+
+## 1.3. Thực trạng tra cứu và tìm kiếm việc làm
+
+Trong quá trình tìm kiếm việc làm, người lao động thường phải tiếp cận nhiều nguồn thông tin khác nhau. Nếu thông tin không được tổ chức theo danh mục hoặc không có chức năng tìm kiếm phù hợp, người dùng có thể mất nhiều thời gian để tìm được công việc phù hợp.
+
+Một Website việc làm cần hỗ trợ người dùng tiếp cận thông tin một cách nhanh chóng và thuận tiện. Các thông tin cần được phân loại theo ngành nghề và được trình bày rõ ràng.
+
+Từ thực trạng trên, đề tài tập trung xây dựng chức năng tìm kiếm và lựa chọn ngành nghề. Người dùng có thể nhập từ khóa và lựa chọn ngành nghề để tìm các bài viết việc làm phù hợp.
+
+Chức năng Smart Search của Joomla được sử dụng để hỗ trợ lập chỉ mục và tìm kiếm nội dung trên Website.
+
+## 1.4. Tổng quan về Trung tâm Giới thiệu việc làm
+
+Trung tâm Giới thiệu việc làm là đơn vị cung cấp và hỗ trợ các thông tin liên quan đến việc làm, người lao động và nhà tuyển dụng.
+
+Trong phạm vi Website của đề tài, Trung tâm được giới thiệu thông qua các nội dung:
+
+- Thông tin giới thiệu Trung tâm.
+- Thông tin việc làm.
+- Thông tin nhà tuyển dụng.
+- Tin tức và thông báo.
+- Thông tin liên hệ.
+
+Website đóng vai trò là kênh cung cấp thông tin trực tuyến, giúp người dùng có thể truy cập và tra cứu nội dung liên quan đến việc làm.
+
+## 1.5. Phát biểu bài toán
+
+Bài toán đặt ra là xây dựng một Website giới thiệu thông tin Trung tâm Giới thiệu việc làm bằng Joomla, trong đó nội dung được tổ chức khoa học và người dùng có thể dễ dàng tra cứu thông tin việc làm.
+
+Website cần cho phép người dùng:
+
+- Truy cập và xem thông tin Trung tâm.
+- Xem danh sách việc làm.
+- Lựa chọn ngành nghề.
+- Tìm kiếm việc làm bằng từ khóa.
+- Xem thông tin chi tiết của công việc.
+- Xem thông tin nhà tuyển dụng.
+- Xem tin tức và thông báo.
+- Xem thông tin liên hệ.
+
+Đối với quản trị viên, hệ thống cần hỗ trợ quản lý nội dung thông qua khu vực quản trị Joomla.
+
+## 1.6. Mục tiêu của hệ thống
+
+Mục tiêu của hệ thống là xây dựng một Website giới thiệu thông tin Trung tâm Giới thiệu việc làm có giao diện rõ ràng, nội dung được tổ chức hợp lý và hỗ trợ người dùng tra cứu thông tin việc làm.
+
+Các mục tiêu chính gồm:
+
+- Tìm hiểu và vận dụng hệ quản trị nội dung Joomla.
+- Xây dựng Website trên môi trường XAMPP.
+- Xây dựng cấu trúc nội dung phù hợp với lĩnh vực việc làm.
+- Xây dựng các danh mục ngành nghề.
+- Xây dựng chức năng tìm kiếm việc làm.
+- Xây dựng chức năng lựa chọn và lọc ngành nghề.
+- Hiển thị thông tin việc làm và nhà tuyển dụng.
+- Quản lý nội dung thông qua Joomla Administrator.
+- Thực hiện sao lưu và phục hồi Website, cơ sở dữ liệu.
+- Quản lý mã nguồn và tài liệu bằng Git và GitHub.
+
+## 1.7. Yêu cầu của hệ thống
+
+### 1.7.1. Yêu cầu chức năng
+
+Website cần đáp ứng các chức năng chính sau:
+
+**Đối với người dùng:**
+
+- Xem trang chủ.
+- Xem thông tin giới thiệu Trung tâm.
+- Xem danh sách việc làm.
+- Xem việc làm theo ngành nghề.
+- Tìm kiếm việc làm.
+- Lọc việc làm theo ngành nghề.
+- Xem chi tiết việc làm.
+- Xem thông tin nhà tuyển dụng.
+- Xem tin tức và thông báo.
+- Xem thông tin liên hệ.
+
+**Đối với quản trị viên:**
+
+- Đăng nhập khu vực quản trị Joomla.
+- Quản lý bài viết.
+- Quản lý danh mục.
+- Quản lý menu.
+- Quản lý module.
+- Quản lý nội dung Website.
+- Quản lý chức năng tìm kiếm.
+- Sao lưu Website.
+- Sao lưu cơ sở dữ liệu.
+- Phục hồi Website và cơ sở dữ liệu.
+
+### 1.7.2. Yêu cầu phi chức năng
+
+Website cần đáp ứng các yêu cầu phi chức năng sau:
+
+- Giao diện rõ ràng và dễ sử dụng.
+- Nội dung được tổ chức khoa học.
+- Website hoạt động ổn định trên môi trường XAMPP.
+- Thời gian phản hồi khi thực hiện tìm kiếm ở mức phù hợp với môi trường kiểm thử.
+- Có khả năng hiển thị trên các kích thước màn hình khác nhau.
+- Dễ dàng cập nhật và quản lý nội dung.
+- Có khả năng sao lưu và phục hồi dữ liệu.
+- Mã nguồn và tài liệu được quản lý bằng Git và GitHub.
+- Hạn chế đưa thông tin nhạy cảm vào Repository công khai.
+
+## 1.8. Định hướng giải quyết
+
+Để giải quyết bài toán, đề tài lựa chọn Joomla làm hệ quản trị nội dung chính của Website. Joomla cung cấp sẵn các chức năng quản lý bài viết, danh mục, menu, module và người dùng, giúp giảm thời gian xây dựng các chức năng quản trị cơ bản.
+
+Quá trình thực hiện được định hướng theo các bước:
+
+```text
+Khảo sát Website tham khảo
+          │
+          ▼
+Phân tích yêu cầu
+          │
+          ▼
+Thiết kế cấu trúc Website
+          │
+          ▼
+Cài đặt Joomla trên XAMPP
+          │
+          ▼
+Xây dựng danh mục và nội dung
+          │
+          ▼
+Thiết kế giao diện
+          │
+          ▼
+Cấu hình Smart Search
+          │
+          ▼
+Kiểm thử chức năng
+          │
+          ▼
+Sao lưu và phục hồi
+          │
+          ▼
+Quản lý mã nguồn bằng Git/GitHub
+```
+
+Về giao diện, đề tài sử dụng template Cassiopeia và tùy chỉnh bằng HTML, CSS và JavaScript để phù hợp với nội dung Website.
+
+Về tìm kiếm, Joomla Smart Search được sử dụng để lập chỉ mục nội dung và hỗ trợ người dùng tìm kiếm việc làm theo từ khóa và ngành nghề.
+
+Về môi trường triển khai, Website được cài đặt trên XAMPP với Apache, PHP và MariaDB. Mã nguồn và tài liệu được quản lý bằng Git và GitHub.
+
+Thông qua định hướng trên, Website đáp ứng các yêu cầu cơ bản của đề tài và tạo cơ sở cho quá trình hiện thực hóa hệ thống ở Chương 3.
+
 # CHƯƠNG 2. NGHIÊN CỨU LÝ THUYẾT
 
 ## 2.1. Cơ sở lý thuyết về hệ thống thông tin
