@@ -49,9 +49,8 @@
 ## 2.5. PHP và cơ sở dữ liệu
 ## 2.6. XAMPP và môi trường máy chủ cục bộ
 ## 2.7. Git và GitHub
-## 2.8. Ngrok và triển khai truy cập từ Internet
-## 2.9. Các công cụ sử dụng trong quá trình thực hiện
-## 2.10. Kết luận chương
+## 2.8. Các công cụ sử dụng trong quá trình thực hiện
+## 2.9. Kết luận chương
 
 # CHƯƠNG 3. HIỆN THỰC HÓA NGHIÊN CỨU
 
@@ -69,8 +68,7 @@
 ## 3.8. Xây dựng các chức năng chính
 ## 3.9. Cấu hình môi trường XAMPP
 ## 3.10. Đưa website lên GitHub
-## 3.11. Cấu hình truy cập website thông qua Ngrok
-## 3.12. Kiểm thử hệ thống
+## 3.11. Kiểm thử hệ thống
 
 # CHƯƠNG 4. KẾT QUẢ NGHIÊN CỨU
 
@@ -184,7 +182,7 @@ Ngoài phần Mở đầu, Danh mục tài liệu tham khảo và Phụ lục, n
 
 **Chương 1. Tổng quan:** Trình bày tổng quan về lĩnh vực việc làm, khảo sát các Website tham khảo, thực trạng tra cứu việc làm, phát biểu bài toán, mục tiêu và yêu cầu của hệ thống.
 
-**Chương 2. Nghiên cứu lý thuyết:** Trình bày các cơ sở lý thuyết và công nghệ được sử dụng trong quá trình thực hiện đồ án như Joomla, HTML, CSS, JavaScript, PHP, cơ sở dữ liệu, XAMPP, Git, GitHub và Ngrok.
+**Chương 2. Nghiên cứu lý thuyết:** Trình bày các cơ sở lý thuyết và công nghệ được sử dụng trong quá trình thực hiện đồ án như Joomla, HTML, CSS, JavaScript, PHP, cơ sở dữ liệu, XAMPP, Git, GitHub.
 
 **Chương 3. Hiện thực hóa nghiên cứu:** Trình bày quá trình phân tích, thiết kế, cài đặt Joomla, xây dựng và cấu hình Website, xây dựng các chức năng chính, cấu hình môi trường và kiểm thử hệ thống.
 
@@ -532,7 +530,6 @@ Trong đề tài, Git và GitHub được sử dụng để:
 Repository của đề tài có tên:
 
 `csn-dx24tt8-lethinhu-trungtamvieclam-joomla`
-
 Cấu trúc chính của Repository:
 
 ```text
@@ -545,77 +542,14 @@ csn-dx24tt8-lethinhu-trungtamvieclam-joomla/
 ├── .gitignore
 └── README.md
 
-## 2.8. Ngrok và triển khai truy cập từ Internet
+```
 
-Ngrok là công cụ hỗ trợ tạo đường hầm kết nối từ Internet đến một dịch vụ Web đang chạy trên máy tính cục bộ. Công cụ này cho phép chuyển tiếp các yêu cầu từ bên ngoài đến máy chủ đang hoạt động trong môi trường cục bộ.
 
-Trong đề tài, Website Trung tâm Giới thiệu việc làm được xây dựng và chạy trên môi trường XAMPP. Website được truy cập trực tiếp trên máy tính thông qua địa chỉ:
-
-`http://localhost/joomla/`
-
-Do Website đang chạy trên máy chủ cục bộ nên các thiết bị bên ngoài không thể truy cập trực tiếp thông qua địa chỉ `localhost`. Vì vậy, Ngrok được nghiên cứu nhằm hỗ trợ tạo kết nối từ Internet đến Website đang chạy trên máy tính.
-
-### 2.8.1. Nguyên lý hoạt động của Ngrok
-
-Mô hình hoạt động có thể được mô tả như sau:
-
-**Người dùng bên ngoài → Internet → Ngrok → Apache/XAMPP → Joomla → MariaDB**
-
-Trong mô hình trên:
-
-- **Người dùng bên ngoài:** thiết bị sử dụng trình duyệt để truy cập Website.
-- **Internet:** môi trường truyền dữ liệu giữa người dùng và máy tính chạy Website.
-- **Ngrok:** tạo đường hầm kết nối từ Internet đến máy chủ cục bộ.
-- **Apache/XAMPP:** tiếp nhận và xử lý yêu cầu truy cập Website.
-- **Joomla:** xử lý nội dung và các chức năng của Website.
-- **MariaDB:** lưu trữ dữ liệu của Website.
-
-Nhờ cơ chế này, Website Joomla đang chạy trên máy tính cá nhân có thể được kiểm tra khả năng truy cập từ một thiết bị hoặc mạng khác.
-
-### 2.8.2. Vai trò của Ngrok trong đề tài
-
-Trong phạm vi đề tài, Ngrok được sử dụng nhằm hỗ trợ quá trình kiểm thử khả năng truy cập Website từ Internet.
-
-Việc sử dụng Ngrok giúp người thực hiện:
-
-- Kiểm tra Website từ thiết bị khác máy tính đang chạy XAMPP.
-- Kiểm tra khả năng truy cập giao diện Website từ mạng bên ngoài.
-- Kiểm tra các thành phần giao diện khi truy cập thông qua một kết nối bên ngoài.
-- Hỗ trợ trình diễn Website trong quá trình báo cáo và thuyết trình khi cần thiết.
-
-Ngrok chỉ đóng vai trò là công cụ hỗ trợ kết nối đến môi trường phát triển cục bộ. Website chính của đề tài vẫn được xây dựng và quản lý trên XAMPP.
-
-### 2.8.3. Quy trình sử dụng Ngrok
-
-Quy trình tổng quát để kiểm tra Website thông qua Ngrok gồm các bước:
-
-**Bước 1:** Khởi động Apache và các dịch vụ cần thiết trong XAMPP.
-
-**Bước 2:** Kiểm tra Website Joomla hoạt động bình thường tại:
-
-`http://localhost/joomla/`
-
-**Bước 3:** Khởi chạy Ngrok để tạo đường hầm kết nối đến cổng Web đang được Apache sử dụng.
-
-**Bước 4:** Ngrok cung cấp một địa chỉ truy cập tạm thời để chuyển tiếp yêu cầu từ Internet đến máy chủ cục bộ.
-
-**Bước 5:** Sử dụng thiết bị hoặc trình duyệt khác để kiểm tra khả năng truy cập Website.
-
-**Bước 6:** Kiểm tra giao diện và các chức năng chính của Website.
-
-### 2.8.4. Giới hạn khi sử dụng Ngrok
-
-Ngrok phù hợp cho mục đích phát triển, kiểm thử và trình diễn Website trong phạm vi đồ án. Tuy nhiên, đây không phải là phương án triển khai Website chính thức lên môi trường máy chủ Internet.
-
-Khi sử dụng Ngrok, máy tính chạy XAMPP phải đang hoạt động và Website phải được cấu hình đúng để có thể xử lý các yêu cầu truy cập.
-
-Do đó, trong đề tài, Website vẫn được duy trì trên môi trường XAMPP cục bộ, còn Ngrok được sử dụng như một công cụ hỗ trợ kiểm thử khả năng truy cập từ Internet.
-
-## 2.9. Các công cụ sử dụng trong quá trình thực hiện
+## 2.8. Các công cụ sử dụng trong quá trình thực hiện
 
 Trong quá trình thực hiện đề tài, người thực hiện sử dụng kết hợp nhiều công cụ và phần mềm để phục vụ việc cài đặt, xây dựng, tùy chỉnh, kiểm thử và quản lý Website.
 
-### 2.9.1. Joomla
+### 2.8.1. Joomla
 
 Joomla 5.4.7 là nền tảng chính được sử dụng để xây dựng Website Trung tâm Giới thiệu việc làm.
 
@@ -631,7 +565,7 @@ Joomla được sử dụng để:
 - Cấu hình chức năng tìm kiếm.
 - Quản lý thông tin liên hệ.
 
-### 2.9.2. XAMPP
+### 2.8.2. XAMPP
 
 XAMPP được sử dụng để tạo môi trường máy chủ Web cục bộ cho Website.
 
@@ -644,7 +578,7 @@ Các thành phần được sử dụng trong XAMPP gồm:
 
 XAMPP giúp người thực hiện có thể chạy Joomla trực tiếp trên máy tính trong quá trình xây dựng và kiểm thử Website.
 
-### 2.9.3. phpMyAdmin
+### 2.8.3. phpMyAdmin
 
 phpMyAdmin được sử dụng để quản lý cơ sở dữ liệu Joomla.
 
@@ -656,7 +590,7 @@ Trong đề tài, phpMyAdmin được sử dụng để:
 - Phục hồi cơ sở dữ liệu.
 - Kiểm tra dữ liệu sau khi phục hồi.
 
-### 2.9.4. Visual Studio Code
+### 2.8.4. Visual Studio Code
 
 Visual Studio Code là trình soạn thảo mã nguồn được sử dụng trong quá trình thực hiện đề tài.
 
@@ -671,7 +605,7 @@ Trong đề tài, Visual Studio Code được sử dụng để:
 
 Đặc biệt, file `user.css` được sử dụng để tùy chỉnh giao diện Template Cassiopeia theo yêu cầu của Website.
 
-### 2.9.5. Git và GitHub
+### 2.8.5. Git và GitHub
 
 Git được sử dụng để quản lý phiên bản của mã nguồn và tài liệu.
 
@@ -683,7 +617,7 @@ Repository lưu trữ mã nguồn Website, báo cáo tiến độ, báo cáo đ�
 
 Việc sử dụng Git và GitHub giúp theo dõi quá trình thay đổi và cập nhật của dự án.
 
-### 2.9.6. Trình duyệt Web
+### 2.8.6. Trình duyệt Web
 
 Trình duyệt Web được sử dụng để truy cập và kiểm thử Website trong quá trình phát triển.
 
@@ -701,13 +635,8 @@ Thông qua trình duyệt, người thực hiện kiểm tra:
 - Trang liên hệ.
 - Khả năng hiển thị của Website.
 
-### 2.9.7. Ngrok
 
-Ngrok được sử dụng để hỗ trợ kiểm tra khả năng truy cập Website từ Internet trong khi Website vẫn đang chạy trên môi trường XAMPP cục bộ.
-
-Công cụ này giúp kiểm tra Website từ thiết bị hoặc mạng khác trong quá trình thử nghiệm.
-
-### 2.9.8. Tổng hợp môi trường thực hiện
+### 2.8.7. Tổng hợp môi trường thực hiện
 
 Môi trường và công cụ sử dụng trong đề tài được tổng hợp như sau:
 
@@ -724,12 +653,11 @@ Môi trường và công cụ sử dụng trong đề tài được tổng hợp
 | 9 | Visual Studio Code | Chỉnh sửa mã nguồn và tài liệu |
 | 10 | Git | Quản lý phiên bản |
 | 11 | GitHub | Lưu trữ mã nguồn và tài liệu |
-| 12 | Ngrok | Hỗ trợ kiểm thử truy cập Internet |
-| 13 | Microsoft Edge / Google Chrome | Kiểm thử Website |
+| 12 | Microsoft Edge / Google Chrome | Kiểm thử Website |
 
 ---
 
-## 2.10. Kết luận chương
+## 2.9. Kết luận chương
 
 Chương 2 đã trình bày các cơ sở lý thuyết, công nghệ và công cụ được sử dụng trong quá trình thực hiện đề tài **“Tìm hiểu CMS Joomla và thiết kế Website giới thiệu thông tin Trung tâm Giới thiệu việc làm”**.
 
@@ -934,295 +862,198 @@ Các chức năng của Website được chia thành hai nhóm chính.
 
 ---
 
-## 3.4. Thiết kế hệ thống
-
-Website được thiết kế dựa trên Joomla CMS và môi trường XAMPP.
-
-Các thành phần chính của hệ thống gồm:
-
-- Trình duyệt Web.
-- Apache.
-- Joomla.
-- PHP.
-- Smart Search.
-- MariaDB.
-- Các Module và Template.
-
-Mô hình hoạt động tổng quát:
 
 ```text
-Người dùng
-    |
-    v
-Trình duyệt Web
-    |
-    v
-Apache / XAMPP
-    |
-    v
-Joomla 5.4.7
-    |
-    +------------------+
-    |                  |
-    v                  v
-Smart Search       Modules / Template
-    |                  |
-    +--------+---------+
-             |
-             v
-        MariaDB
-        joomla_db
+                 NGƯỜI DÙNG
+                     │
+                     ▼
+              GIAO DIỆN WEBSITE
+                     │
+          ┌──────────┼──────────┐
+          │          │          │
+          ▼          ▼          ▼
+       Việc làm    Tin tức   Nhà tuyển dụng
+          │
+          ▼
+    Tìm kiếm / Lọc
+      Smart Search
+          │
+          ▼
+       JOOMLA
+          │
+    ┌─────┴─────┐
+    │           │
+    ▼           ▼
+ CSDL Joomla  Quản trị
+              Joomla
+    │
+    ▼
+  MariaDB
+```
 
-Người dùng gửi yêu cầu thông qua trình duyệt. Apache tiếp nhận yêu cầu và chuyển đến Joomla xử lý. Joomla lấy dữ liệu từ MariaDB và trả nội dung về trình duyệt.
+### 3.4.1. Sơ đồ Use Case
 
-3.4.1. Sơ đồ Use Case
-Sơ đồ Use Case mô tả mối quan hệ giữa các tác nhân và các chức năng chính của Website.
+Sơ đồ Use Case mô tả mối quan hệ giữa các tác nhân và các chức năng của hệ thống.
+
 Hệ thống có hai tác nhân:
+
 - Người dùng.
 - Quản trị viên.
-a) Người dùng
+
+#### a) Người dùng
+
 Người dùng có thể:
+
 - Xem trang chủ.
-- Xem giới thiệu.
+- Xem giới thiệu Trung tâm.
 - Xem việc làm.
 - Xem danh mục ngành nghề.
 - Tìm kiếm việc làm.
 - Lọc việc làm theo ngành nghề.
 - Xem chi tiết việc làm.
-- Xem nhà tuyển dụng.
-- Xem tin tức và sự kiện.
-- Xem thông báo.
+- Xem thông tin nhà tuyển dụng.
+- Xem tin tức và thông báo.
 - Xem thông tin liên hệ.
-b) Quản trị viên
+
+#### b) Quản trị viên
+
 Quản trị viên có thể:
+
+- Đăng nhập khu vực quản trị Joomla.
 - Quản lý bài viết.
 - Quản lý danh mục.
 - Quản lý menu.
-- Quản lý Module.
-- Quản lý Template.
-- Quản lý việc làm.
-- Quản lý nhà tuyển dụng.
-- Quản lý tin tức và thông báo.
-- Quản lý liên hệ.
-- Cấu hình Smart Search.
-- Lập chỉ mục nội dung.
+- Quản lý module.
+- Quản lý nội dung Website.
+- Quản lý chức năng tìm kiếm.
 - Sao lưu Website.
 - Sao lưu cơ sở dữ liệu.
-- Phục hồi Website.
-- Phục hồi cơ sở dữ liệu.
-c) Sơ đồ Use Case tổng quát
-                 WEBSITE TRUNG TÂM GIỚI THIỆU VIỆC LÀM
+- Phục hồi Website và cơ sở dữ liệu.
 
- Người dùng                                      Quản trị viên
-     |                                                 |
-     |                                                 |
-     +--> Xem trang chủ                    +--> Quản lý bài viết
-     |                                      |
-     +--> Xem giới thiệu                    +--> Quản lý danh mục
-     |                                      |
-     +--> Xem việc làm                      +--> Quản lý menu
-     |                                      |
-     +--> Xem ngành nghề                    +--> Quản lý Module
-     |                                      |
-     +--> Tìm kiếm việc làm                 +--> Quản lý Template
-     |                                      |
-     +--> Lọc ngành nghề                    +--> Quản lý việc làm
-     |                                      |
-     +--> Xem chi tiết việc làm             +--> Quản lý nhà tuyển dụng
-     |                                      |
-     +--> Xem nhà tuyển dụng                +--> Quản lý tin tức
-     |                                      |
-     +--> Xem tin tức                       +--> Quản lý liên hệ
-     |                                      |
-     +--> Xem thông báo                     +--> Quản lý Smart Search
-     |                                      |
-     +--> Xem liên hệ                       +--> Sao lưu / Phục hồi
-Hình 3.1. Sơ đồ Use Case tổng quát của Website
-d) Use Case tìm kiếm việc làm
-Tác nhân: Người dùng.
-Mục đích: Tìm kiếm các việc làm phù hợp với từ khóa.
-Quy trình:
-1. Người dùng truy cập Website.
-2. Nhập từ khóa tìm kiếm.
-3. Có thể nhập địa điểm.
-4. Có thể lựa chọn ngành nghề.
-5. Nhấn nút TÌM KIẾM.
-6. Smart Search xử lý yêu cầu.
-7. Website hiển thị kết quả.
-8. Người dùng lựa chọn bài viết cần xem.
-e) Use Case quản lý bài viết
-Tác nhân: Quản trị viên.
-Quy trình:
-1. Đăng nhập Joomla Administrator.
-2. Truy cập Articles.
-3. Tạo hoặc chọn bài viết.
-4. Nhập nội dung.
-5. Chọn danh mục.
-6. Thiết lập trạng thái.
-7. Lưu bài viết.
-8. Kiểm tra nội dung trên Website.
-f) Use Case sao lưu và phục hồi
-Tác nhân: Quản trị viên.
-Quản trị viên thực hiện sao lưu mã nguồn và cơ sở dữ liệu. Khi cần phục hồi, các dữ liệu đã sao lưu được sử dụng để khôi phục Website và kiểm tra lại hoạt động của hệ thống.
-3.4.2. Sơ đồ hoạt động
-a) Hoạt động tìm kiếm việc làm
+### 3.4.2. Sơ đồ hoạt động
+
+Quy trình tìm kiếm việc làm được thực hiện theo các bước:
+
+```text
 Bắt đầu
-   |
-   v
+   │
+   ▼
 Truy cập Website
-   |
-   v
+   │
+   ▼
 Nhập từ khóa
-   |
-   v
-Chọn ngành nghề?
-   |
-   +-------- Có --------> Chọn ngành nghề
-   |                           |
-   |                           v
-   +-------- Không ------------+
-               |
-               v
-          Nhấn TÌM KIẾM
-               |
-               v
-      Smart Search xử lý
-               |
-               v
-        Hiển thị kết quả
-               |
-               v
-        Xem bài viết
-               |
-               v
-             Kết thúc
-b) Hoạt động quản lý nội dung
-Bắt đầu
-   |
-   v
-Đăng nhập quản trị Joomla
-   |
-   v
-Chọn nội dung cần quản lý
-   |
-   v
-Thêm / sửa nội dung
-   |
-   v
-Chọn danh mục
-   |
-   v
-Lưu bài viết
-   |
-   v
-Kiểm tra Website
-   |
-   v
+   │
+   ▼
+Chọn ngành nghề
+   │
+   ▼
+Nhấn "TÌM KIẾM"
+   │
+   ▼
+Smart Search xử lý
+   │
+   ▼
+Hiển thị kết quả
+   │
+   ├───────────────┐
+   │               │
+Có kết quả       Không có kết quả
+   │               │
+   ▼               ▼
+Chọn bài viết   Thông báo không
+   │            tìm thấy kết quả
+   ▼
+Xem chi tiết
+việc làm
+   │
+   ▼
 Kết thúc
-c) Hoạt động sao lưu và phục hồi
-Bắt đầu
-   |
-   v
-Sao lưu Website
-   |
-   +--> Sao lưu mã nguồn
-   |
-   +--> Sao lưu cơ sở dữ liệu
-   |
-   v
-Lưu bản sao lưu
-   |
-   v
-Khi cần phục hồi
-   |
-   +--> Phục hồi mã nguồn
-   |
-   +--> Phục hồi cơ sở dữ liệu
-   |
-   v
-Kiểm tra Website
-   |
-   v
-Kết thúc
-3.4.3. Sơ đồ kiến trúc hệ thống
-Kiến trúc Website được tổ chức thành các thành phần chính:
-+------------------------------------------------+
-|                  NGƯỜI DÙNG                    |
-|             Edge / Chrome Browser              |
-+------------------------------------------------+
-                       |
-                       v
-+------------------------------------------------+
-|              GIAO DIỆN WEBSITE                 |
-|        HTML + CSS + Cassiopeia                 |
-+------------------------------------------------+
-                       |
-                       v
-+------------------------------------------------+
-|                  JOOMLA CMS                    |
-| Articles | Categories | Menus | Modules       |
-| Contacts | Smart Search | Administrator        |
-+------------------------------------------------+
-                       |
-                       v
-+------------------------------------------------+
-|               APACHE + PHP / XAMPP             |
-+------------------------------------------------+
-                       |
-                       v
-+------------------------------------------------+
-|                    MARIADB                     |
-|                  joomla_db                     |
-+------------------------------------------------+
-Kiến trúc này cho phép các thành phần hoạt động theo từng lớp. Người dùng tương tác với giao diện; Joomla xử lý nội dung và chức năng; Apache cung cấp dịch vụ Web; MariaDB lưu trữ dữ liệu.
-3.4.4. Thiết kế cơ sở dữ liệu
-Website sử dụng cơ sở dữ liệu MariaDB với tên:
-joomla_db
-Tiền tố bảng của Joomla:
+```
+
+### 3.4.3. Sơ đồ kiến trúc hệ thống
+
+Website được triển khai theo kiến trúc gồm giao diện người dùng, Joomla, cơ sở dữ liệu và môi trường máy chủ cục bộ XAMPP.
+
+```text
+┌─────────────────────────────────────────────┐
+│                 NGƯỜI DÙNG                  │
+└──────────────────────┬──────────────────────┘
+                       │
+                       ▼
+┌─────────────────────────────────────────────┐
+│             GIAO DIỆN WEBSITE              │
+│          HTML / CSS / JavaScript            │
+│             Template Cassiopeia            │
+└──────────────────────┬──────────────────────┘
+                       │
+                       ▼
+┌─────────────────────────────────────────────┐
+│                   JOOMLA                    │
+│                                             │
+│ Articles │ Categories │ Menu │ Modules      │
+│             Smart Search                   │
+└──────────────────────┬──────────────────────┘
+                       │
+                       ▼
+┌─────────────────────────────────────────────┐
+│                CƠ SỞ DỮ LIỆU               │
+│                  MariaDB                   │
+│                 joomla_db                  │
+└──────────────────────┬──────────────────────┘
+                       │
+                       ▼
+┌─────────────────────────────────────────────┐
+│                    XAMPP                    │
+│           Apache + MariaDB + PHP           │
+└─────────────────────────────────────────────┘
+```
+
+### 3.4.4. Thiết kế cơ sở dữ liệu
+
+Cơ sở dữ liệu của Website được tạo trong MariaDB với tên `joomla_db`. Joomla tự động tạo các bảng cần thiết trong quá trình cài đặt và vận hành hệ thống.
+
+Các bảng sử dụng tiền tố:
+
+```text
 rjth_
-Cơ sở dữ liệu lưu trữ các nhóm thông tin phục vụ hoạt động của Website.
-Nhóm dữ liệu	Nội dung
-Bài viết	Giới thiệu, việc làm, tin tức, nhà tuyển dụng
-Danh mục	Phân loại nội dung
-Menu	Điều hướng Website
-Module	Các thành phần giao diện
-Người dùng	Tài khoản quản trị
-Cấu hình	Thông tin cấu hình Joomla
-Smart Search	Dữ liệu phục vụ tìm kiếm
-Liên hệ	Thông tin liên hệ
+```
 
+Một số bảng chính:
 
-Quan hệ logic của nội dung có thể mô tả:
-Danh mục
-   |
-   +----> Bài viết
-             |
-             +----> Việc làm
-             |
-             +----> Tin tức
-             |
-             +----> Nhà tuyển dụng
-             |
-             +----> Thông báo
-             |
-             +----> Giới thiệu
-Đối với nhóm việc làm:
+| Thành phần | Chức năng |
+|---|---|
+| `rjth_content` | Lưu thông tin bài viết |
+| `rjth_categories` | Lưu thông tin danh mục |
+| `rjth_users` | Quản lý người dùng |
+| `rjth_menu` | Quản lý menu |
+| `rjth_modules` | Quản lý module |
+| `rjth_extensions` | Quản lý thành phần mở rộng |
+| `rjth_assets` | Quản lý tài nguyên và quyền |
+| `rjth_finder_*` | Lưu dữ liệu phục vụ Smart Search |
+| `rjth_session` | Quản lý phiên làm việc |
+
+Các danh mục việc làm được tổ chức thành năm nhóm:
+
+```text
 Việc làm
-   |
-   +--> Kế toán - Kiểm toán
-   |
-   +--> Kinh doanh - Bán hàng
-   |
-   +--> Công nghệ thông tin
-   |
-   +--> Hành chính - Nhân sự
-   |
-   +--> Marketing - Truyền thông
-Cơ sở dữ liệu được quản lý thông qua phpMyAdmin. Trong quá trình thực hiện, cơ sở dữ liệu được sao lưu và phục hồi trên môi trường kiểm thử.
-3.5. Thiết kế giao diện
+│
+├── Kế toán - Kiểm toán
+├── Kinh doanh - Bán hàng
+├── Công nghệ thông tin
+├── Hành chính - Nhân sự
+└── Marketing - Truyền thông
+```
+
+Mỗi bài viết việc làm được gán vào một danh mục tương ứng. Cách tổ chức này giúp quản trị viên dễ dàng quản lý nội dung và hỗ trợ chức năng tìm kiếm, lọc việc làm theo ngành nghề.
+
+## 3.5. Thiết kế giao diện
+
 Giao diện Website được thiết kế dựa trên Template Cassiopeia của Joomla và được tùy chỉnh bằng CSS.
-3.5.1. Menu chính
+
+### 3.5.1. Menu chính
+
 Menu chính được bố trí theo chiều ngang, gồm:
+
 - Trang chủ.
 - Giới thiệu.
 - Việc làm.
@@ -1230,81 +1061,126 @@ Menu chính được bố trí theo chiều ngang, gồm:
 - Nhà tuyển dụng.
 - Thông báo.
 - Liên hệ.
+
 Menu giúp người dùng nhanh chóng chuyển đến các nội dung chính.
-3.5.2. Banner
+
+### 3.5.2. Banner
+
 Banner được đặt ở khu vực phía trên Website để tạo điểm nhấn và giới thiệu nội dung của Trung tâm.
-3.5.3. Thanh tìm kiếm
+
+### 3.5.3. Thanh tìm kiếm
+
 Thanh tìm kiếm được thiết kế gồm:
+
 - Từ khóa.
 - Địa điểm.
 - Ngành nghề.
 - Nút TÌM KIẾM.
+
 Giao diện được tùy chỉnh bằng CSS trong file user.css.
-3.5.4. Việc làm nổi bật
+
+### 3.5.4. Việc làm nổi bật
+
 Khu vực Việc làm nổi bật hiển thị các bài viết việc làm được lựa chọn trên trang chủ.
+
 3.5.5. Danh mục ngành nghề
+
 Danh mục ngành nghề hiển thị 5 nhóm ngành:
+
 - Kế toán - Kiểm toán.
 - Kinh doanh - Bán hàng.
 - Công nghệ thông tin.
 - Hành chính - Nhân sự.
 - Marketing - Truyền thông.
-3.5.6. Footer
+
+### 3.5.6. Footer
+
 Footer hiển thị các thông tin liên hệ như:
+
 - Hotline.
 - Email.
 - Địa chỉ.
 - Kênh liên hệ trực tuyến.
-3.6. Cài đặt Joomla
+
+## 3.6. Cài đặt Joomla
+
 Joomla được cài đặt trên máy tính cá nhân thông qua XAMPP.
+
 Bước 1: Khởi động XAMPP
+
 Khởi động Apache và MySQL/MariaDB trong XAMPP Control Panel.
 
-
 Bước 2: Tạo cơ sở dữ liệu
+
 Tạo cơ sở dữ liệu:
+
 joomla_db
 thông qua phpMyAdmin.
+
 Bước 3: Đặt mã nguồn Joomla
 Mã nguồn Joomla được đặt tại:
+
 C:\xampp\htdocs\joomla
+
 Bước 4: Truy cập Website
+
 Truy cập:
+
 http://localhost/joomla/
+
 để thực hiện cài đặt.
+
 Bước 5: Cấu hình cơ sở dữ liệu
+
 Thông tin kết nối:
+
 - Host: localhost.
 - Username: root.
 - Database: joomla_db.
+
 Bước 6: Truy cập khu vực quản trị
+
 Sau khi hoàn thành cài đặt, truy cập:
+
 http://localhost/joomla/administrator/
+
 để thực hiện cấu hình Website.
-3.7. Xây dựng và cấu hình Website
-3.7.1. Xây dựng danh mục
+
+## 3.7. Xây dựng và cấu hình Website
+
+### 3.7.1. Xây dựng danh mục
+
 Website được xây dựng các danh mục nội dung chính.
 Đối với Việc làm, 5 danh mục ngành nghề được tạo:
+
 - Kế toán - Kiểm toán.
 - Kinh doanh - Bán hàng.
 - Công nghệ thông tin.
 - Hành chính - Nhân sự.
 - Marketing - Truyền thông.
-3.7.2. Xây dựng bài viết
+
+### 3.7.2. Xây dựng bài viết
+
 Các bài viết được tạo tương ứng với từng nhóm nội dung.
 Các nhóm bài viết gồm:
+
 - Giới thiệu Trung tâm.
 - Việc làm.
 - Nhà tuyển dụng.
 - Tin tức.
 - Thông báo.
 - Liên hệ.
+
 Các bài viết việc làm được gán vào danh mục ngành nghề phù hợp.
+
 Ví dụ:
 Nhân viên kế toán tổng hợp
 được gán vào:
+
 Kế toán - Kiểm toán.
-3.7.3. Xây dựng menu
+
+### 3.7.3. Xây dựng menu
+
 Menu chính được cấu hình gồm:
 Trang chủ
 Giới thiệu
@@ -1313,9 +1189,12 @@ Tin tức
 Nhà tuyển dụng
 Thông báo
 Liên hệ
-3.7.4. Cấu hình Module
+
+### 3.7.4. Cấu hình Module
+
 Các Module được cấu hình theo vị trí hiển thị.
 Các Module chính:
+
 - Menu chính.
 - Banner Trung tâm giới thiệu việc làm.
 - Thanh tìm kiếm.
@@ -1324,30 +1203,45 @@ Các Module chính:
 - Danh mục ngành nghề.
 - Thông tin liên hệ.
 - Đăng nhập.
+
 Template Cassiopeia được sử dụng làm nền tảng giao diện và được tùy chỉnh bằng CSS.
-3.8. Xây dựng các chức năng chính
-3.8.1. Chức năng hiển thị việc làm
+
+## 3.8. Xây dựng các chức năng chính
+
+### 3.8.1. Chức năng hiển thị việc làm
+
 Các việc làm được xây dựng dưới dạng Joomla Articles.
 Mỗi bài viết được gán vào một danh mục ngành nghề.
 Người dùng truy cập mục Việc làm để xem danh sách công việc.
 Khi chọn một bài viết, Website hiển thị thông tin chi tiết.
-3.8.2. Chức năng lựa chọn ngành nghề
+
+### 3.8.2. Chức năng lựa chọn ngành nghề
+
 Website xây dựng 5 nhóm ngành nghề:
+
 - Kế toán - Kiểm toán.
 - Kinh doanh - Bán hàng.
 - Công nghệ thông tin.
 - Hành chính - Nhân sự.
 - Marketing - Truyền thông.
+
 Người dùng có thể chọn ngành nghề để xem các việc làm thuộc nhóm tương ứng.
-3.8.3. Chức năng tìm kiếm việc làm
+
+### 3.8.3. Chức năng tìm kiếm việc làm
+
 Chức năng tìm kiếm được triển khai bằng Joomla Smart Search.
+
 Thanh tìm kiếm gồm:
+
 - Từ khóa.
 - Địa điểm.
 - Ngành nghề.
 - Nút TÌM KIẾM.
+
 Người dùng nhập từ khóa và thực hiện tìm kiếm. Smart Search tìm kiếm trong nội dung đã được lập chỉ mục và trả về kết quả phù hợp.
-3.8.4. Chức năng lọc theo ngành nghề
+
+### 3.8.4. Chức năng lọc theo ngành nghề
+
 Website sử dụng các bộ lọc tương ứng với 5 nhóm ngành nghề.
 Ví dụ:
 Người dùng nhập từ khóa:
@@ -1357,34 +1251,52 @@ Kế toán - Kiểm toán
 Website hiển thị kết quả:
 Nhân viên kế toán tổng hợp
 thuộc danh mục Kế toán - Kiểm toán.
-3.8.5. Chức năng hiển thị nhà tuyển dụng
+
+### 3.8.5. Chức năng hiển thị nhà tuyển dụng
+
 Thông tin nhà tuyển dụng được xây dựng bằng Joomla Articles và được phân loại theo nội dung phù hợp.
 Người dùng truy cập mục Nhà tuyển dụng để xem thông tin của đơn vị tuyển dụng.
-3.8.6. Chức năng tin tức và thông báo
+
+### 3.8.6. Chức năng tin tức và thông báo
+
 Tin tức và thông báo được quản lý thông qua Joomla Articles.
 Quản trị viên có thể cập nhật nội dung khi có thông tin mới.
-3.8.7. Chức năng liên hệ
+
+### 3.8.7. Chức năng liên hệ
+
 Trang Liên hệ cung cấp các thông tin liên quan đến Trung tâm như:
 - Tên Trung tâm.
 - Địa chỉ.
 - Điện thoại.
 - Email.
 - Kênh liên hệ trực tuyến.
-3.9. Cấu hình môi trường XAMPP
-3.9.1. Cấu hình Apache
+
+## 3.9. Cấu hình môi trường XAMPP
+
+### 3.9.1. Cấu hình Apache
+
 Apache được khởi động thông qua XAMPP để cung cấp dịch vụ Web.
 Mã nguồn Website nằm tại:
+
 C:\xampp\htdocs\joomla
+
 Website được truy cập tại:
+
 http://localhost/joomla/
-3.9.2. Cấu hình MariaDB
+
+### 3.9.2. Cấu hình MariaDB
+
 MariaDB được khởi động thông qua XAMPP.
 Cơ sở dữ liệu:
+
 joomla_db
 được quản lý bằng phpMyAdmin.
-3.9.3. Kiểm tra môi trường
+
+### 3.9.3. Kiểm tra môi trường
+
 Sau khi Apache và MariaDB hoạt động, Website được kiểm tra bằng trình duyệt.
 Các thành phần được kiểm tra:
+
 - Trang chủ.
 - Menu.
 - Bài viết.
@@ -1394,9 +1306,12 @@ Các thành phần được kiểm tra:
 - Nhà tuyển dụng.
 - Tin tức.
 - Liên hệ.
-3.10. Đưa Website lên GitHub
+
+## 3.10. Đưa Website lên GitHub
+
 Git và GitHub được sử dụng để quản lý mã nguồn và tài liệu đồ án.
 Repository:
+
 csn-dx24tt8-lethinhu-trungtamvieclam-joomla
 Cấu trúc Repository:
 csn-dx24tt8-lethinhu-trungtamvieclam-joomla/
@@ -1407,13 +1322,21 @@ csn-dx24tt8-lethinhu-trungtamvieclam-joomla/
 ├── docker/
 ├── .gitignore
 └── README.md
+
 Mã nguồn Website được lưu tại:
+
 src/trungtamvieclam
+
 Tài liệu đồ án được lưu tại:
+
 thesis
+
 Báo cáo tiến độ được lưu tại:
+
 progress-report
+
 Quy trình cập nhật:
+
 Chỉnh sửa
    |
    v
@@ -1431,30 +1354,15 @@ git push
    v
 GitHub
 Việc quản lý bằng GitHub giúp lưu lại lịch sử thay đổi của dự án và thuận tiện cho việc quản lý mã nguồn.
-3.11. Cấu hình truy cập Website thông qua Ngrok
-Ngrok được nghiên cứu nhằm hỗ trợ truy cập Website Joomla từ Internet trong khi Website vẫn chạy trên máy tính cục bộ.
-Quy trình:
-Khởi động XAMPP
-       |
-       v
-Khởi động Apache
-       |
-       v
-Kiểm tra Website localhost
-       |
-       v
-Khởi động Ngrok
-       |
-       v
-Tạo đường hầm đến máy chủ Web
-       |
-       v
-Kiểm tra từ thiết bị khác
-Ngrok đóng vai trò hỗ trợ kiểm thử truy cập từ Internet. Website chính vẫn được xây dựng và quản lý trên XAMPP.
-3.12. Kiểm thử hệ thống
+
+## 3.11. Kiểm thử hệ thống
+
 Sau khi hoàn thành Website, các chức năng được kiểm thử để xác định khả năng hoạt động theo yêu cầu.
-3.12.1. Kiểm thử giao diện
+
+### 3.11.1. Kiểm thử giao diện
+
 Các thành phần được kiểm tra:
+
 - Banner.
 - Menu chính.
 - Thanh tìm kiếm.
@@ -1462,12 +1370,18 @@ Các thành phần được kiểm tra:
 - Danh mục ngành nghề.
 - Nội dung bài viết.
 - Footer.
-3.12.2. Kiểm thử tìm kiếm
+
+### 3.11.2. Kiểm thử tìm kiếm
+
 Thực hiện tìm kiếm bằng từ khóa:
+
 nhân viên
 Website hiển thị các kết quả có nội dung phù hợp với từ khóa.
-3.12.3. Kiểm thử lọc ngành nghề
+
+### 3.11.3. Kiểm thử lọc ngành nghề
+
 Kiểm tra lần lượt 5 nhóm ngành:
+
 STT	Ngành nghề	Kết quả
 1	Kế toán - Kiểm toán	Đạt
 2	Kinh doanh - Bán hàng	Đạt
@@ -1476,7 +1390,8 @@ STT	Ngành nghề	Kết quả
 5	Marketing - Truyền thông	Đạt
 
 
-3.12.4. Kiểm thử bài viết
+### 3.11.4. Kiểm thử bài viết
+
 Các nội dung được kiểm tra:
 - Giới thiệu Trung tâm.
 - Danh sách việc làm.
@@ -1486,26 +1401,36 @@ Các nội dung được kiểm tra:
 - Tin tức.
 - Thông báo.
 - Liên hệ.
-3.12.5. Kiểm thử cơ sở dữ liệu
+
+### 3.11.5. Kiểm thử cơ sở dữ liệu
+
 Cơ sở dữ liệu joomla_db được kiểm tra bằng phpMyAdmin.
+
 Các thao tác:
+
 - Kiểm tra cơ sở dữ liệu.
 - Kiểm tra bảng dữ liệu.
 - Sao lưu cơ sở dữ liệu.
 - Phục hồi cơ sở dữ liệu kiểm thử.
 - Kiểm tra dữ liệu sau khi phục hồi.
-3.12.6. Kiểm thử sao lưu và phục hồi
+
+### 3.12.6. Kiểm thử sao lưu và phục hồi
+
 Website được sao lưu để tạo bản dự phòng.
 Cơ sở dữ liệu được xuất thành tệp SQL.
 Bản sao lưu được sử dụng để phục hồi trên môi trường kiểm thử.
+
 Sau khi phục hồi, Website được kiểm tra lại:
+
 - Trang chủ.
 - Menu.
 - Bài viết.
 - Danh mục.
 - Tìm kiếm.
 - Nội dung việc làm.
-3.12.7. Bảng tổng hợp kiểm thử
+
+### 3.11.7. Bảng tổng hợp kiểm thử
+
 STT	Nội dung kiểm thử	Kết quả
 1	Trang chủ	Đạt
 2	Menu chính	Đạt
@@ -1525,7 +1450,8 @@ STT	Nội dung kiểm thử	Kết quả
 16	Phục hồi Website	Đạt
 
 
-3.12.8. Kết quả kiểm thử
+### 3.11.8. Kết quả kiểm thử
+
 Qua quá trình kiểm thử, các chức năng chính của Website hoạt động theo yêu cầu đặt ra trong phạm vi đề tài.
 Website có thể hiển thị các nội dung giới thiệu, việc làm, nhà tuyển dụng, tin tức và thông báo. Chức năng tìm kiếm và lọc việc làm theo 5 nhóm ngành nghề đã được kiểm tra. Các thao tác sao lưu và phục hồi Website, cơ sở dữ liệu cũng được thực hiện để kiểm tra khả năng khôi phục hệ thống.
 Kết quả của quá trình hiện thực hóa và kiểm thử là cơ sở để trình bày các giao diện và kết quả đạt được của Website trong Chương 4. Kết quả nghiên cứu.
