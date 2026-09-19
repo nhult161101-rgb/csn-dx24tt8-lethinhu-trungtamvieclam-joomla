@@ -1309,51 +1309,136 @@ Các thành phần được kiểm tra:
 
 ## 3.10. Đưa Website lên GitHub
 
-Git và GitHub được sử dụng để quản lý mã nguồn và tài liệu đồ án.
-Repository:
+Git và GitHub được sử dụng để quản lý mã nguồn, tài liệu và quá trình thực hiện đồ án. Việc sử dụng GitHub giúp lưu trữ các phiên bản của dự án, theo dõi lịch sử thay đổi và thuận tiện trong quá trình cập nhật mã nguồn.
 
+### 3.10.1. Tạo Repository trên GitHub
+
+Repository của đồ án được tạo trên GitHub với tên:
+
+`csn-dx24tt8-lethinhu-trungtamvieclam-joomla`
+
+Repository được sử dụng để lưu trữ các thành phần của đồ án, bao gồm mã nguồn Website, tài liệu, báo cáo và các tệp phục vụ quá trình triển khai.
+
+Cấu trúc chính của Repository gồm:
+
+```text
 csn-dx24tt8-lethinhu-trungtamvieclam-joomla
-Cấu trúc Repository:
-csn-dx24tt8-lethinhu-trungtamvieclam-joomla/
-├── progress-report/
-├── setup/
-├── src/
-├── thesis/
-├── docker/
+│
+├── progress-report
+├── setup
+├── src
+│   └── trungtamvieclam
+├── thesis
+├── docker
 ├── .gitignore
 └── README.md
+```
 
-Mã nguồn Website được lưu tại:
+### 3.10.2. Khởi tạo Git cho dự án
 
-src/trungtamvieclam
+Sau khi chuẩn bị thư mục dự án trên máy tính, Git được khởi tạo để theo dõi các tệp trong dự án.
 
-Tài liệu đồ án được lưu tại:
+Các lệnh được sử dụng:
 
-thesis
+```bash
+git init
+```
 
-Báo cáo tiến độ được lưu tại:
+Sau đó cấu hình thông tin người thực hiện:
 
-progress-report
+```bash
+git config --global user.name "Le Thi Nhu"
+git config --global user.email "email-cua-ban"
+```
 
-Quy trình cập nhật:
+### 3.10.3. Thêm mã nguồn vào Repository
 
-Chỉnh sửa
-   |
-   v
-Kiểm tra
-   |
-   v
-git add
-   |
-   v
-git commit
-   |
-   v
+Các tệp trong dự án được đưa vào vùng theo dõi của Git bằng lệnh:
+
+```bash
+git add -A
+```
+
+Sau khi kiểm tra các thay đổi, tiến hành tạo commit:
+
+```bash
+git commit -m "Cap nhat ma nguon va bao cao"
+```
+
+Commit được sử dụng để lưu lại một phiên bản của dự án tại một thời điểm cụ thể.
+
+### 3.10.4. Kết nối Repository với GitHub
+
+Repository GitHub được kết nối với dự án trên máy tính thông qua remote:
+
+```bash
+git remote add origin https://github.com/nhult161101-rgb/csn-dx24tt8-lethinhu-trungtamvieclam-joomla.git
+```
+
+Kiểm tra thông tin remote bằng lệnh:
+
+```bash
+git remote -v
+```
+
+Sau khi kết nối thành công, mã nguồn được đẩy lên GitHub bằng lệnh:
+
+```bash
+git push -u origin master
+```
+
+Các lần cập nhật tiếp theo có thể thực hiện bằng:
+
+```bash
+git add -A
+git commit -m "Cap nhat du an"
 git push
-   |
-   v
-GitHub
-Việc quản lý bằng GitHub giúp lưu lại lịch sử thay đổi của dự án và thuận tiện cho việc quản lý mã nguồn.
+```
+
+### 3.10.5. Quản lý các phiên bản của dự án
+
+Trong quá trình thực hiện đồ án, các thay đổi về mã nguồn, báo cáo và tài liệu được cập nhật lên GitHub thông qua các commit.
+
+Quy trình cập nhật được thực hiện theo các bước:
+
+```text
+Chỉnh sửa dự án
+       │
+       ▼
+Kiểm tra thay đổi
+       │
+       ▼
+git add -A
+       │
+       ▼
+git commit
+       │
+       ▼
+git push
+       │
+       ▼
+Repository trên GitHub
+```
+
+Việc quản lý phiên bản giúp có thể theo dõi lịch sử thay đổi của dự án và hỗ trợ khôi phục về các phiên bản trước khi cần thiết.
+
+### 3.10.6. Quản lý báo cáo và tiến độ đồ án
+
+Ngoài mã nguồn Website, Repository còn được sử dụng để lưu trữ báo cáo và các tài liệu phục vụ đồ án.
+
+Thư mục `progress-report` được sử dụng để lưu các báo cáo tiến độ theo từng tuần.
+
+Thư mục `thesis` được sử dụng để lưu các tài liệu liên quan đến báo cáo đồ án, hình ảnh và các nội dung phục vụ quá trình hoàn thiện báo cáo.
+
+README.md được sử dụng để giới thiệu thông tin dự án, công nghệ sử dụng, tiến độ thực hiện và các nội dung cần thiết khác.
+
+### 3.10.7. Kết quả
+
+Sau khi thực hiện, mã nguồn Website và tài liệu đồ án đã được quản lý trên GitHub. Repository giúp tập trung các thành phần của dự án tại một nơi, hỗ trợ theo dõi tiến độ và quản lý các phiên bản trong quá trình thực hiện đồ án.
+
+Hình ảnh Repository GitHub được trình bày tại Phụ lục C.
+
+**Hình C8. Quản lý mã nguồn và tài liệu đồ án trên GitHub**
 
 ## 3.11. Kiểm thử hệ thống
 
