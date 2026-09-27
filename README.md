@@ -14,6 +14,6 @@
 - [x] Thực hiện phục hồi cơ sở dữ liệu.
 - [x] Kiểm thử Website.
 - [x] Đánh giá kết quả đạt được.
-- [ ] Hoàn thiện báo cáo.
-- [ ] Hoàn thiện slide thuyết trình
+- [X] Hoàn thiện báo cáo.
+- [X] Hoàn thiện slide thuyết trình
 
